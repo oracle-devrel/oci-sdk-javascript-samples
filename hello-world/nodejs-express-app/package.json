@@ -1,0 +1,16 @@
+{
+  "name": "oci-sdk-nodejs-express-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "oci-common": "^2.40.1",
+    "oci-core": "^2.40.1"
+  }
+}
