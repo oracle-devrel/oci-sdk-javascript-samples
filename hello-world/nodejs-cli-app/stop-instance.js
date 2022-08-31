@@ -10,8 +10,13 @@ const core = require("oci-core");
 
 const adp = new common.ConfigFileAuthenticationDetailsProvider();
 
-const region = common.Region.US_ASHBURN_1;
-const instanceId = "<instance-ocid>";
+const region = prcess.env.REGION ? prcess.env.REGION : common.Region.US_ASHBURN_1;
+if(process.argv.length < 3) {
+    console.error("Instance OCID argument is missing");
+    process.exit(1);
+}
+
+const instanceId = process.argv[2]; //Pass the instance id as command line arg.
 const instanceAction = "SOFTSTOP"; // Refer: https://docs.oracle.com/en-us/iaas/tools/oci-cli/2.12.7/oci_cli_docs/cmdref/compute/instance/action.html
 
 // const instanceAction = "STOP"; //For abrubt stopping.

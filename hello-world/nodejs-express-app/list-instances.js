@@ -11,7 +11,8 @@ const core = require("oci-core");
 
 const adp = new common.ConfigFileAuthenticationDetailsProvider();
 
-const region = common.Region.US_ASHBURN_1;
+//Default Region. This can be overridden with query parameter
+const region = prcess.env.REGION ? prcess.env.REGION : common.Region.US_ASHBURN_1;
 const compartmentId = adp.getTenantId();
 
 var listInstances = (req, res) => {

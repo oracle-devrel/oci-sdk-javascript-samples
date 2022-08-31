@@ -11,7 +11,7 @@ const core = require("oci-core");
 
 const adp = new common.ConfigFileAuthenticationDetailsProvider();
 
-const region = common.Region.US_ASHBURN_1;
+const region = prcess.env.REGION ? prcess.env.REGION : common.Region.US_ASHBURN_1;
 const compartmentId = adp.getTenantId();
 
 (async ()=> {
