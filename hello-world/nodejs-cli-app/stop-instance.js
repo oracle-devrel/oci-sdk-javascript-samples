@@ -10,7 +10,7 @@ const core = require("oci-core");
 
 const adp = new common.ConfigFileAuthenticationDetailsProvider();
 
-const region = prcess.env.REGION ? prcess.env.REGION : common.Region.US_ASHBURN_1;
+const region = process.env.REGION ? process.env.REGION : common.Region.US_ASHBURN_1;
 if(process.argv.length < 3) {
     console.error("Instance OCID argument is missing");
     process.exit(1);

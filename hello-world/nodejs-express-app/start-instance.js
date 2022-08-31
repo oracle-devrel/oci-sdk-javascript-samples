@@ -11,7 +11,7 @@ const core = require("oci-core");
 const adp = new common.ConfigFileAuthenticationDetailsProvider();
 
 //Default Region. This can be overridden with query parameter
-const region = prcess.env.REGION ? prcess.env.REGION : common.Region.US_ASHBURN_1;
+const region = process.env.REGION ? process.env.REGION : common.Region.US_ASHBURN_1;
 const instanceAction = "START"; // Refer: https://docs.oracle.com/en-us/iaas/tools/oci-cli/2.12.7/oci_cli_docs/cmdref/compute/instance/action.html
 
 var startInstance = (req, res) => {
