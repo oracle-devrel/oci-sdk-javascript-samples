@@ -29,7 +29,7 @@ $ npm install
 ## Running the Program
 
 ```
-node list-instance.js
+node list-instances.js
 ```
 This will print all the instances from the root tenancy in `US-ASHBURN-1` region. The tenancy info is retrieved from OCI config.
 
