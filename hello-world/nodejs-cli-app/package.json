@@ -9,7 +9,7 @@
   "author": "",
   "license": "UPL",
   "dependencies": {
-    "oci-common": "^2.28.0",
-    "oci-core": "^2.28.0"
+    "oci-common": "^2.50.1",
+    "oci-core": "^2.50.1"
   }
 }
