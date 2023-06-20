@@ -8,6 +8,12 @@ Software Development Kits (SDKs) Build and deploy apps that integrate with Oracl
 This project sample helps developers to setup their first OCI SDK based NodeJS application.
 
 ### Cloning this Sample
+If you have your OCI tenancy and want to try out this sample, click on 'Open in Code Editor' button below to clone this repository in your cloud shell workspace.
+
+[<img src="https://raw.githubusercontent.com/oracle-devrel/oci-code-editor-samples/main/images/open-in-code-editor.png" />](https://cloud.oracle.com/?region=home&cs_repo_url=https://github.com/oracle-devrel/oci-sdk-javascript-samples.git&cs_open_ce=true&cs_readme_path=hello-world/nodejs-express-app/README.md)
+
+or 
+
 ```
 git init nodejs-express-app
 cd nodejs-express-app
