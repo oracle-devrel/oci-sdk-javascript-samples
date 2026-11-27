@@ -9,7 +9,7 @@
   "author": "",
   "license": "UPL",
   "dependencies": {
-    "express": "^4.18.1",
+    "express": "^4.22.3",
     "oci-common": "^2.148.0",
     "oci-core": "^2.148.0"
   }
